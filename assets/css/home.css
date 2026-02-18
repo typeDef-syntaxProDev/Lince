@@ -1,0 +1,56 @@
+#hero img {
+    width: 100%;
+}
+
+.coleccion {
+    padding: 35px 10%;
+    padding-bottom: 50px;
+}
+
+.coleccion h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.grid-productos {
+    display: grid;
+    gap: 200px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.info {
+    margin-top: 10px;
+}
+
+.info h3 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.precio {
+    font-size: 30px;
+}
+
+@media (max-width: 768px) {
+    .grid-productos {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .card img {
+        height: auto;
+    }
+
+    .coleccion h2 {
+        font-size: 32px;
+    }
+
+    .info h3 {
+        font-size: 20px;
+    }
+
+    .precio {
+        font-size: 20px;
+    }
+}

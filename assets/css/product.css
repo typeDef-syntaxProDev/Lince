@@ -1,0 +1,62 @@
+.producto-container {
+    padding: 70px 10%;
+    display: flex;
+    gap: 150px;
+}
+
+.producto-imagen {
+    flex: 1;
+}
+
+.producto-imagen img {
+    width: 100%;
+}
+
+.producto-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.producto-info h1 {
+    font-size: 55px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.precio {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.talles h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.talles button {
+    font-size: 30px;
+    padding: 20px 30px;
+    border: 1px solid black;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.talles button:hover,
+.talles button.activo {
+    background: black;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .producto-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .producto-info h1 {
+        font-size: 25px;
+    }
+}

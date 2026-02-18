@@ -1,61 +1,69 @@
 <!DOCTYPE html>
-    <head>
-        <title>LINCE</title>
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="icon" href="src/logo.ico" type="image/x-icon">
-        <meta charset="UTF-8">
+<html lang="es">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINCE</title>
 
-    <body>
-        <section id="hero">
-            <img src="src/full_logo2.jpeg" alt="Imagen de fondo">
-        </section>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/logo.ico" type="image/x-icon">
 
-        <section class="coleccion">
-            <h2>Nueva Colección</h2>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
 
-            <div class="grid-productos">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+</head>
 
-                <a href="product.html?id=1">
-                    <div class="card">
-                        <img src="src/black.jpeg" alt="Top deportivo">
-                        <div class="info">
-                            <h3>Top Deportivo Negro</h3>
-                            <p class="precio">$899</p>
-                        </div>
-                    </div>
-                </a>
+<body>
 
-                <a href="product.html?id=2">
-                    <div class="card">
-                        <img src="src/grey.jpeg" alt="Calza deportiva">
-                        <div class="info">
-                            <h3>Top Deportivo Gris</h3>
-                            <p class="precio">$899</p>
-                        </div>
-                    </div>
-                </a>    
+    <!-- HERO -->
+    <section id="hero">
+        <img src="assets/images/hero.jpeg" alt="Logo Lince">
+    </section>
 
-                <a href="product.html?id=3">
-                    <div class="card">
-                        <img src="src/pink.jpeg" alt="Top deportivo">
-                        <div class="info">
-                            <h3>Top Deportivo Rosado</h3>
-                            <p class="precio">$899</p>
-                        </div>
-                    </div>
-                </a>
+    <!-- COLECCIÓN -->
+    <section class="coleccion">
+        <h2>Nueva Colección</h2>
 
-            </div>
-        </section>
+        <div class="grid-productos">
 
-        <footer>
-            © 2026 Lince
-        </footer>
-    </body>
+            <a href="pages/product.html?id=1" class="card">
+                <img src="assets/images/products/black_top.jpeg" alt="Top deportivo negro">
+                <div class="info">
+                    <h3>Top Deportivo Negro</h3>
+                    <p class="precio">$899</p>
+                </div>
+            </a>
 
+            <a href="pages/product.html?id=2" class="card">
+                <img src="assets/images/products/grey_top.jpeg" alt="Top deportivo gris">
+                <div class="info">
+                    <h3>Top Deportivo Gris</h3>
+                    <p class="precio">$899</p>
+                </div>
+            </a>
+
+            <a href="pages/product.html?id=3" class="card">
+                <img src="assets/images/products/pink_top.jpeg" alt="Top deportivo rosado">
+                <div class="info">
+                    <h3>Top Deportivo Rosado</h3>
+                    <p class="precio">$899</p>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Lince
+    </footer>
+
+</body>
 </html>

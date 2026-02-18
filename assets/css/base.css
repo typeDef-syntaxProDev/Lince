@@ -1,0 +1,24 @@
+:root {
+    --color-text: #111;
+    --color-muted: #555;
+    --color-light: #f8f8f8;
+    --color-dark: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'GFS Didot', serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
