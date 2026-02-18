@@ -34,12 +34,17 @@
         gap: 50px;
     }
 
+    .card {
+        padding-top: 55px;
+        border-top: 1px solid #ccc;
+    }
+
     .card img {
         height: auto;
     }
 
     .coleccion {
-        padding: 35px 5%;
+        padding: 35px 10%;
         padding-bottom: 50px;
     }
     
