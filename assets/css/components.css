@@ -1,47 +1,124 @@
 .card {
     cursor: pointer;
-    transition: transform 0.3s ease;
+    position: relative;
+    background: #fff;
+    transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.card-image {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 3 / 4;
+}
+
+.card-image::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.03), transparent);
+    transition: height var(--transition-smooth);
+    pointer-events: none;
+}
+
+.card:hover .card-image::after {
+    height: 100%;
 }
 
 .card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform var(--transition-slow);
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-medium);
+}
+
+.card:hover img {
+    transform: scale(1.03);
 }
 
 .precio {
-    font-weight: bold;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: var(--color-muted);
 }
 
 .btn-comprar {
-    margin-top: 60px;
-    padding: 18px 40px;
-    background: black;
-    color: white;
-    border: none;
-    font-size: 50px;
+    margin-top: 50px;
+    padding: 20px 50px;
+    background: var(--color-dark);
+    border: 2px solid var(--color-dark);
+    font-size: 18px;
     font-family: 'GFS Didot', serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
     cursor: pointer;
-    transition: opacity 0.3s ease;
+    transition: all var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
 }
 
-.btn-comprar:hover {
-    opacity: 0.8;
+.btn-comprar span {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    transition: color var(--transition-smooth);
 }
 
+.btn-comprar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transition: left var(--transition-smooth);
+    z-index: 0;
+}
+
+.btn-comprar:hover::before {
+    left: 0;
+}
+
+.btn-comprar:hover span {
+    color: var(--color-dark);
+}
+
+/* Animación del hero mejorada */
 @keyframes fade {
-    0% { opacity: 0; }
-    10% { opacity: 1; }
+    0% { opacity: 0; transform: scale(1); }
+    5% { opacity: 1; }
     30% { opacity: 1; }
-    40% { opacity: 0; }
-    100% { opacity: 0; }
+    35% { opacity: 0; }
+    100% { opacity: 0; transform: scale(1.08); }
 }
 
 @keyframes zoom {
     from { transform: scale(1); }
-    to { transform: scale(1.1); }
+    to { transform: scale(1.08); }
+}
+
+/* Etiquetas de producto */
+.tag {
+    display: inline-block;
+    padding: 6px 14px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: var(--color-dark);
+    color: #fff;
+    margin-bottom: var(--spacing-sm);
+}
+
+.tag--outline {
+    background: transparent;
+    border: 1px solid var(--color-border);
+    color: var(--color-muted);
 }

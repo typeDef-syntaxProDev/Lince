@@ -1,8 +1,28 @@
 :root {
-    --color-text: #111;
-    --color-muted: #555;
-    --color-light: #f8f8f8;
+    --color-text: #1a1a1a;
+    --color-muted: #6b6b6b;
+    --color-light: #fafafa;
     --color-dark: #000;
+    --color-accent: #2c2c2c;
+    --color-border: #e5e5e5;
+    --color-hover: #f5f5f5;
+    
+    /* Spacing */
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 32px;
+    --spacing-lg: 64px;
+    --spacing-xl: 120px;
+    
+    /* Transitions */
+    --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* Shadows */
+    --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.04);
+    --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --shadow-medium: 0 8px 40px rgba(0, 0, 0, 0.12);
 }
 
 * {
@@ -16,9 +36,54 @@
 html {
     scroll-behavior: smooth;
     font-family: 'GFS Didot', serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background-color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+    transition: opacity var(--transition-fast);
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Animaciones de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.animate-in {
+    animation: fadeInUp 0.8s var(--transition-smooth) forwards;
+}
+
+/* Selection */
+::selection {
+    background: var(--color-dark);
+    color: #fff;
 }
