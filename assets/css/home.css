@@ -1,7 +1,3 @@
-#hero img {
-    width: 100%;
-}
-
 .coleccion {
     padding: 35px 10%;
     padding-bottom: 250px;
@@ -43,7 +39,7 @@
     }
 
     .coleccion {
-        padding: 20px 5%;
+        padding: 35px 5%;
         padding-bottom: 50px;
     }
     
