@@ -1,42 +1,42 @@
-# LINCE — Tienda de Ropa Deportiva
+# LINCE — Sportswear Store
 
-Landing page de e-commerce para **Lince**, una marca de indumentaria deportiva femenina. El sitio presenta la nueva colección de tops deportivos con un diseño elegante, minimalista y completamente responsive.
+E-commerce landing page for **Lince**, a women's sportswear brand. The site showcases the new collection of sports sets with an elegant, minimalist, and fully responsive design.
 
 ---
 
-## Vista previa
+## Preview
 
 ### Home
-La página principal muestra una imagen hero a pantalla completa y un grid con los productos de la nueva colección.
+The main page displays a full-screen hero image and a grid with products from the new collection.
 
-### Detalle de Producto
-Cada producto tiene su propia vista con imagen, nombre, precio, selector de talle y botón de compra que redirige a WhatsApp con un mensaje predefinido.
-
----
-
-## Características
-
-- **Diseño responsive** — Se adapta a dispositivos móviles y escritorio con media queries.
-- **Navegación dinámica** — Los productos se cargan dinámicamente según el parámetro `id` de la URL.
-- **Integración con WhatsApp** — El botón "Comprar" genera un mensaje automático con el producto y talle seleccionado.
-- **Selector de talles interactivo** — Permite elegir entre S, M y L con feedback visual.
-- **Tipografía serif elegante** — Uso de Google Fonts (GFS Didot) para una estética premium.
-- **CSS modular** — Estilos separados en archivos por responsabilidad (`base`, `layout`, `components`, `home`, `product`).
+### Product Detail
+Each product has its own view with image, name, price, size selector, and a purchase button that redirects to WhatsApp with a predefined message.
 
 ---
 
-## Tecnologías
+## Features
 
-| Tecnología | Uso |
+- **Responsive design** — Adapts to mobile and desktop devices using media queries.
+- **Dynamic navigation** — Products are loaded dynamically based on the `id` parameter in the URL.
+- **WhatsApp integration** — The "Buy" button generates an automatic message with the selected product and size.
+- **Interactive size selector** — Allows choosing between S, M, and L with visual feedback.
+- **Elegant serif typography** — Uses Google Fonts (GFS Didot) for a premium aesthetic.
+- **Modular CSS** — Styles separated into files by responsibility (`base`, `layout`, `components`, `home`, `product`).
+
+---
+
+## Technologies
+
+| Technology | Usage |
 |---|---|
-| **HTML5** | Estructura semántica del sitio |
-| **CSS3** | Estilos, grid layout, flexbox, transiciones y responsive design |
-| **JavaScript (Vanilla)** | Lógica de producto, renderizado dinámico e integración con WhatsApp |
-| **Google Fonts** | Tipografía GFS Didot |
+| **HTML5** | Semantic structure of the site |
+| **CSS3** | Styles, grid layout, flexbox, transitions, and responsive design |
+| **JavaScript (Vanilla)** | Product logic, dynamic rendering, and WhatsApp integration |
+| **Google Fonts** | GFS Didot typography |
 
 ---
 
-## Estructura del proyecto
+## Project structure
 
 ```
 Lince/
